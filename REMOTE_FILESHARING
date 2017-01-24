@@ -1,0 +1,19 @@
+	REMOTE FILESHARING 
+
+	By using this remote filesharing we can send or get files from remote systems.
+
+	We have two methods for this 
+1)rsync
+2)scp
+rsync stands for remote synchronization 
+scp stands for secure copy
+Behind this one ssh protocol will works
+1)rsync:
+syn: #rsync -avz <source file> <destination IP>:<path>
+ex: #rsync -avz sun 192.168.0.1:/root
+provide password
+
+2)scp:
+syn: #scp -rv <source file> <destination IP>:<path>
+ex: #scp -rv sun 192.168.0.1:/root
+provide password
